@@ -19,6 +19,7 @@
 	</div>
 	<nav class="scroll">
 		<ul>
+      <li><a href="https://docs.dorajs.com/"><i class="fas fa-book"></i> 文档</a></li>
 			{% for page in site.pages %}
 				{% if page.include_in_header == true %}
 				<li><a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a></li>
@@ -26,7 +27,7 @@
 			{% endfor %}
 			{% if site.presskit_download_link %}
 				<li><a href="{{ site.presskit_download_link }}">Press Kit</a></li>
-			{% endif %}
+      {% endif %}
 		</ul>
 	</nav>
 </header>

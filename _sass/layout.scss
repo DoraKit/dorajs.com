@@ -1,5 +1,5 @@
 .imageWrapper {					// Sets the background image in the header area
-	height: 714px;
+	height: 734px;
 	background: 
 		linear-gradient(
 		rgba($image-overlay-color, $image-overlay-transparency), 
@@ -11,7 +11,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
-	border-radius: 0px 0px 40px 40px;
+	border-radius: 0px 0px 20px 20px;
 
 }
 
@@ -376,45 +376,47 @@ nav > ul li a:active {
 
 
 
-// iPhone Device Preview
+// Android Device Preview
 
-.iphonePreview {
+.androidPreview {
 	grid-area: p;
-	background-image: url($device-color);
-	background-size: 400px auto;
+	background-image: url('/assets/screenshot/editor.png');
+  background-size: 400px auto;
+  height: 979.67px;
 	background-repeat: no-repeat;
 	margin-top: 68px;
 }
 
-.iphoneScreen {
-	width: 349px;
-	-webkit-clip-path: url(#screenMask);
-	clip-path: url(#screenMask);
-	margin-left: 26px;
-	margin-top: 23px;
+.androidScreen {
+	width: 367px;
+	// -webkit-clip-path: url(#screenMask);
+	// clip-path: url(#screenMask);
+	margin-left: 22px;
+	margin-top: 48px;
 }
 
 .videoContainer {
-	width: 349px;
+  width: 367px;
 	height: 755px;
-	-webkit-clip-path: url(#screenMask);
-	clip-path: url(#screenMask);
-	margin-left: 26px;
-	margin-top: 23px;
+	// -webkit-clip-path: url(#screenMask);
+	// clip-path: url(#screenMask);
+	margin-left: 22px;
+	margin-top: 48px;
 }
 
 .videoContainer > video {
-	width: 349px;
+	width: 367px;
 	height: 755px;
 }
 
 @media only screen and (max-width: 1070px) {
 
-	.iphonePreview {
-		background-size: 370px auto;
+	.androidPreview {
+    background-size: 370px auto;
+		height: 698px;
 	}
 
-	.iphoneScreen {
+	.androidScreen {
 		width: 322px;
 		margin-left: 24px;
 		margin-top: 22px;
@@ -436,16 +438,17 @@ nav > ul li a:active {
 
 @media only screen and (max-width: 992px) {
 
-	.iphonePreview {
+	.androidPreview {
 		display: flex;
 		background-size: 260px auto;
-		background-position: center 0;
+    background-position: center 0;
+		height: 498px;
 		margin-top: 47px;
 		justify-content: center;
-		padding-bottom: 75px;
+		padding-bottom: 10px;
 	}
 
-	.iphoneScreen {
+	.androidScreen {
 		width: 226px;
 		height: 488px;
 		-webkit-clip-path: url(#screenMask);
