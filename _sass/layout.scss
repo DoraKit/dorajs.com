@@ -381,8 +381,7 @@ nav > ul li a:active {
 .androidPreview {
 	grid-area: p;
 	background-image: url('/assets/screenshot/editor.png');
-  background-size: 400px auto;
-  height: 979.67px;
+  background-size: 350px auto;
 	background-repeat: no-repeat;
 	margin-top: 68px;
 }
@@ -442,7 +441,6 @@ nav > ul li a:active {
 		display: flex;
 		background-size: 260px auto;
     background-position: center 0;
-		height: 498px;
 		margin-top: 47px;
 		justify-content: center;
 		padding-bottom: 10px;
